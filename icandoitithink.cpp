@@ -85,7 +85,7 @@ LRESULT WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 		hdc = BeginPaint(hwnd, &ps); // uses the paintstruct to begin painting
 		GetClientRect(hwnd, &rect); // sets the rect to the four corners of the client area
 		DrawText(hdc, L"Hello, Windows 98", -1, &rect, DT_SINGLELINE | DT_CENTER | DT_VCENTER);
-		EndPaint(hwnd, &ps); // ends painting
+		EndPaint(hwnd, &ps); // ends the draw commands
 		return 0;
 
 	case WM_DESTROY:
